@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EbookSanctum – Sklep z eBookami</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background-color: #1e88e5;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .ebook-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .ebook {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .ebook img {
+      width: 100%;
+      height: auto;
+    }
+    .ebook-content {
+      padding: 1rem;
+    }
+    .ebook-title {
+      font-size: 1.2rem;
+      margin: 0 0 0.5rem 0;
+    }
+    .ebook-description {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .buy-button {
+      background: #1e88e5;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EbookSanctum</h1>
+    <p>Twoje centrum wiedzy i inspiracji w formie e-booków</p>
+  </header>
+
+  <div class="container">
+    <div class="ebook-list">
+
+      <div class="ebook">
+        <img src="https://via.placeholder.com/300x400" alt="Okładka eBooka 1">
+        <div class="ebook-content">
+          <h2 class="ebook-title">Tytuł eBooka 1</h2>
+          <p class="ebook-description">Krótki opis tego, czego się nauczysz lub co znajdziesz w środku.</p>
+          <a href="#" class="buy-button">Kup teraz</a>
+        </div>
+      </div>
+
+      <div class="ebook">
+        <img src="https://via.placeholder.com/300x400" alt="Okładka eBooka 2">
+        <div class="ebook-content">
+          <h2 class="ebook-title">Tytuł eBooka 2</h2>
+          <p class="ebook-description">Opis drugiego e-booka. Idealny do samorozwoju, biznesu, zdrowia itp.</p>
+          <a href="#" class="buy-button">Kup teraz</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 EbookSanctum.com. Wszelkie prawa zastrzeżone.
+  </footer>
+</body>
+</html>
